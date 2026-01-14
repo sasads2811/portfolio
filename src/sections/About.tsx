@@ -1,28 +1,28 @@
-import { Code2, Lightbulb, Rocket, Users } from "lucide-react";
+import { Code2, Lightbulb, Rocket, Users } from 'lucide-react';
 
 const highlights = [
   {
     icon: Code2,
-    title: "Clean Code",
+    title: 'Clean Code',
     description:
-      "Writing maintainable, scalable code that stands the test of time.",
+      'Writing maintainable, scalable code that stands the test of time.',
   },
   {
     icon: Rocket,
-    title: "Performance",
+    title: 'Performance',
     description:
-      "Optimizing for speed and delivering lightning-fast user experiences.",
+      'Optimizing for speed and delivering lightning-fast user experiences.',
   },
   {
     icon: Users,
-    title: "Collaboration",
-    description: "Working closely with teams to bring ideas to life.",
+    title: 'Collaboration',
+    description: 'Working closely with teams to bring ideas to life.',
   },
   {
     icon: Lightbulb,
-    title: "Innovation",
+    title: 'Innovation',
     description:
-      "Staying ahead with the latest technologies and best practices.",
+      'Staying ahead with the latest technologies and best practices.',
   },
 ];
 
@@ -42,24 +42,23 @@ export const About = () => {
             <h2 className="text-4xl md:text-5xl font-bold leading-tight animate-fade-in animation-delay-100 text-secondary-foreground">
               Building the future,
               <span className="font-serif italic font-normal text-white">
-                {" "}
+                {' '}
                 one component at a time.
               </span>
             </h2>
 
             <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
               <p>
-                I'm a passionate software engineer with over 5 years of
+                I'm a passionate software engineer with over 3 years of
                 experience crafting digital products that make a difference. My
                 journey started with a curiosity for how things work on the web,
                 and it has evolved into a deep expertise in modern frontend
                 technologies.
               </p>
               <p>
-                I specialize in React, Next.js, and TypeScript, building
-                everything from sleek landing pages to complex enterprise
-                applications. My approach combines technical excellence with a
-                keen eye for design and user experience.
+                I specialize in Python, building everything simple scripts to
+                complex enterprise applications. My approach combines technical
+                excellence with a keen eye for design and user experience.
               </p>
               <p>
                 When I'm not coding, you'll find me exploring new technologies,
