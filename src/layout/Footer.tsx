@@ -1,16 +1,19 @@
-import { Github, Linkedin, Twitter, Heart } from "lucide-react";
+import { Github, Linkedin, Twitter, Heart } from 'lucide-react';
 
 const socialLinks = [
-  { icon: Github, href: "#", label: "GitHub" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Twitter, href: "#", label: "Twitter" },
+  { icon: Github, href: 'https://github.com/sasads2811', label: 'GitHub' },
+  {
+    icon: Linkedin,
+    href: 'https://www.linkedin.com/in/aleksandar-perovic-b3044a247/',
+    label: 'LinkedIn',
+  },
 ];
 
 const footerLinks = [
-  { href: "#about", label: "About" },
-  { href: "#projects", label: "Projects" },
-  { href: "#experience", label: "Experience" },
-  { href: "#contact", label: "Contact" },
+  { href: '#about', label: 'About' },
+  { href: '#projects', label: 'Projects' },
+  { href: '#experience', label: 'Experience' },
+  { href: '#contact', label: 'Contact' },
 ];
 
 export const Footer = () => {
@@ -23,10 +26,10 @@ export const Footer = () => {
           {/* Logo & Copyright */}
           <div className="text-center md:text-left">
             <a href="#" className="text-xl font-bold tracking-tight">
-              PM<span className="text-primary">.</span>
+              AP<span className="text-primary">.</span>
             </a>
             <p className="text-sm text-muted-foreground mt-2">
-              © {currentYear} Pedro Machado. All rights reserved.
+              © {currentYear} Aleksandar Perovic. All rights reserved.
             </p>
           </div>
 
@@ -51,6 +54,8 @@ export const Footer = () => {
                 href={social.href}
                 aria-label={social.label}
                 className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <social.icon className="w-5 h-5" />
               </a>
