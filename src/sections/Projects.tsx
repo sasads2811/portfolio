@@ -2,13 +2,13 @@ import { ArrowUpRight, Github } from 'lucide-react';
 import { AnimatedBorderButton } from '../components/AnimatedBorderButton';
 const projects = [
   {
-    title: 'Fintech Dashboard',
+    title: 'AI Stock Analyst',
     description:
-      'A comprehensive financial analytics platform with real-time data visualization, portfolio management, and AI-powered insights.',
+      'A comprehensive financial analytics platform with real-time data visualization. The R22AI system is built on the foundations of traditional investing principles, enhanced with state-of-the-art AI technology and AI-powered insights.',
     image: '/projects/project1.png',
-    tags: ['React', 'Typescript', 'NodeJS'],
-    link: '#',
-    github: '#',
+    tags: ['Python', 'React', 'Flask'],
+    link: 'https://r22ai.de/',
+    github: '',
   },
   // {
   //   title: 'E-Commerce Platform',
@@ -89,12 +89,16 @@ export const Projects = () => {
                   <a
                     href={project.link}
                     className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <ArrowUpRight className="w-5 h-5" />
                   </a>
                   <a
                     href={project.github}
                     className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <Github className="w-5 h-5" />
                   </a>
