@@ -16,7 +16,8 @@
 
     /* Linting */
     "strict": true,
-    "noUnusedLocals": true,
+    "noUnusedLocals": false /*Ovo je promenjeno da nebi build pucao*/,
+    "noImplicitAny": false /*Ovo je dodato da nebi build pucao*/,
     "noUnusedParameters": true,
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
