@@ -92,11 +92,7 @@ export const Hero = () => {
                   Contact Me <ArrowRight className="w-5 h-5" />
                 </Button>
               </a>
-              <a
-                href="./public/resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
                 <AnimatedBorderButton>
                   <Download className="w-5 h-5" />
                   Download CV
