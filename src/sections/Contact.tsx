@@ -38,10 +38,10 @@ export const Contact = () => {
     message: '',
   });
   const [isLoading, setIsLoading] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState({
-    type: null, // 'success' or 'error'
-    message: '',
-  });
+  const [submitStatus, setSubmitStatus] = useState<{
+    type: 'success' | 'error' | null;
+    message: string;
+  }>({ type: null, message: '' });
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -76,12 +76,13 @@ export const Contact = () => {
       });
       setFormData({ name: '', email: '', message: '' });
     } catch (err) {
-      console.error('EmailJS error:', error);
+      console.error('EmailJS error:', err);
       setSubmitStatus({
         type: 'error',
         message:
-          error.text ||
-          'Failed to send message. Please try again later or contant me via email.',
+          err instanceof Error
+            ? err.message
+            : 'Failed to send message. Please try again later or contact me via email.',
       });
     } finally {
       setIsLoading(false);
@@ -138,7 +139,6 @@ export const Contact = () => {
               <div>
                 <label
                   htmlFor="email"
-                  type="email"
                   className="block text-sm font-medium mb-2"
                 >
                   Email
@@ -146,6 +146,7 @@ export const Contact = () => {
                 <input
                   required
                   placeholder="your@email.com"
+                  type="email"
                   value={formData.email}
                   onChange={(e) =>
                     setFormData({ ...formData, email: e.target.value })
